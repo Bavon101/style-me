@@ -21,6 +21,8 @@ const PriceCard = ({price}:{price:IPrice}) => {
         </button>
         <p className="font-bold text-sm my-[15px]">WHAT'S INCLUDED</p>
         <p className="text-[#0069B4]">First Month</p>
+        {price.benefits1.length >0 &&
+       <>
        {price.benefits1.map((benefit,index)=>{
         return (
             <div key={index}>
@@ -28,7 +30,11 @@ const PriceCard = ({price}:{price:IPrice}) => {
             </div>
         )
        })}
-        <p className="pl-0 text-[#0069B4]">Every Other Month After</p>
+       </>
+        }
+       {price.benefits2.length >0 &&
+       <>
+       <p className="pl-0 text-[#0069B4]">Every Other Month After</p>
        {price.benefits2.map((benefit,index)=>{
         return (
             <div key={index}>
@@ -36,6 +42,8 @@ const PriceCard = ({price}:{price:IPrice}) => {
             </div>
         )
        })}
+       </>
+       }
         
     </div>
   )

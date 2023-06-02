@@ -21,7 +21,7 @@ export default function Page() {
             name:"Pro",
             text:"Everything you need to grow your brand",
             price:enabled ? 15.00 : 24.99,
-            subtext:enabled ? "$155.88 billed annually" : "Save $84 a year by switching to annual",
+            subtext:!enabled ? "$155.88 billed annually" : "Save $84 a year by switching to annual",
             benefits1: [
                 "First Month Free","50 credits","200 images","Every other month after"
             ],
@@ -31,21 +31,21 @@ export default function Page() {
             name:"Advanced",
             text:"Advanced features for growing multiple brands",
             price:enabled ? 39.99 : 19.99,
-            subtext:enabled ? "$239.88 billed annually" : "Save $240 a year by switching to annual",
+            subtext:!enabled ? "$239.88 billed annually" : "Save $240 a year by switching to annual",
             benefits1: [
-                "First Month Free","50 credits","200 images","Every other month after"
+                "First Month Free","75 credits","250 images","Every other month after"
             ],
-            benefits2:["Cost Free","15 credits","60 images"]
+            benefits2:["Cost Free","40 credits","80 images"]
         },
         {
             name:"Max",
             text:"Unlimited access for managing multiple accounts",
             price:enabled ? 39.99 : 24.99,
-            subtext:enabled ? "$479.88 billed annually" : "Save $480 a year by switching to annual",
+            subtext:!enabled ? "$479.88 billed annually" : "Save $480 a year by switching to annual",
             benefits1: [
-                "First Month Free","50 credits","200 images","Every other month after"
+                "First Month Free","100 credits","300 images","Every other month after"
             ],
-            benefits2:["Cost Free","15 credits","60 images"]
+            benefits2:["Cost Free","70 credits","100 images"]
         },
     ]
   return (
