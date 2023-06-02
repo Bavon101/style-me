@@ -28,3 +28,20 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.loader {
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  height: 2rem;
+  width: 2rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
