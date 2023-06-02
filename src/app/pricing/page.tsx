@@ -13,7 +13,7 @@ export default function Page() {
             price:0,
             subtext:"",
             benefits1: [
-                "1 Pinterest Account"," ! Instagram Account","1 Facebook Page"
+                "First Month Free","50 credits","200 images",
             ],
             benefits2:[]
         },
@@ -23,7 +23,7 @@ export default function Page() {
             price:enabled ? 15.00 : 24.99,
             subtext:!enabled ? "$155.88 billed annually" : "Save $84 a year by switching to annual",
             benefits1: [
-                "First Month Free","50 credits","200 images","Every other month after"
+                "First Month Free","50 credits","200 images",
             ],
             benefits2:["Cost Free","15 credits","60 images"]
         },
@@ -33,7 +33,7 @@ export default function Page() {
             price:enabled ? 39.99 : 19.99,
             subtext:!enabled ? "$239.88 billed annually" : "Save $240 a year by switching to annual",
             benefits1: [
-                "First Month Free","75 credits","250 images","Every other month after"
+                "First Month Free","75 credits","250 images"
             ],
             benefits2:["Cost Free","40 credits","80 images"]
         },
@@ -43,7 +43,7 @@ export default function Page() {
             price:enabled ? 39.99 : 24.99,
             subtext:!enabled ? "$479.88 billed annually" : "Save $480 a year by switching to annual",
             benefits1: [
-                "First Month Free","100 credits","300 images","Every other month after"
+                "First Month Free","100 credits","300 images"
             ],
             benefits2:["Cost Free","70 credits","100 images"]
         },
