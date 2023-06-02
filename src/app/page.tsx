@@ -9,11 +9,12 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
+import Link from 'next/link';
 import { Fragment, useState } from 'react';
 
 const navigation = {
   pages: [
-    { name: 'About Us', href: '/about' },
+    { name: 'About Us', href: 'about' },
     { name: 'Pricing', href: '/pricing' },
   ],
 };
@@ -141,13 +142,13 @@ export default function Example() {
               <Popover.Group className='hidden lg:ml-8 lg:block lg:self-stretch'>
                 <div className='flex h-full space-x-8'>
                   {navigation.pages.map((page) => (
-                    <a
+                    <Link
                       key={page.name}
                       href={page.href}
                       className='flex items-center text-sm font-medium text-gray-700 hover:text-gray-800'
                     >
                       {page.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </Popover.Group>
