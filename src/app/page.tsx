@@ -843,7 +843,6 @@ export default function Example() {
                       {favorite.name}
                     </a>
                   </h3>
-                  <p className="mt-1 text-sm text-gray-500">{favorite.price}</p>
                 </div>
               ))}
             </div>
