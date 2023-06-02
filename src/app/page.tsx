@@ -142,8 +142,8 @@ const navigation = {
 const favorites = [
   {
     id: 1,
-    name: "Black Basic Tee",
-    price: "$32",
+    name: "Goth Style",
+
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg",
@@ -151,8 +151,8 @@ const favorites = [
   },
   {
     id: 2,
-    name: "Off-White Basic Tee",
-    price: "$32",
+    name: "Modern Style",
+
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-02.jpg",
@@ -160,8 +160,7 @@ const favorites = [
   },
   {
     id: 3,
-    name: "Mountains Artwork Tee",
-    price: "$36",
+    name: "African Classic",
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-03.jpg",
@@ -247,23 +246,7 @@ export default function Example() {
                 {/* Links */}
                 <Tab.Group as="div" className="mt-2">
                   <div className="border-b border-gray-200">
-                    <Tab.List className="-mb-px flex space-x-8 px-4">
-                      {navigation.categories.map((category) => (
-                        <Tab
-                          key={category.name}
-                          className={({ selected }) =>
-                            classNames(
-                              selected
-                                ? "border-indigo-600 text-indigo-600"
-                                : "border-transparent text-gray-900",
-                              "flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium"
-                            )
-                          }
-                        >
-                          {category.name}
-                        </Tab>
-                      ))}
-                    </Tab.List>
+                    <Tab.List className="-mb-px flex space-x-8 px-4"></Tab.List>
                   </div>
                   <Tab.Panels as={Fragment}>
                     {navigation.categories.map((category) => (
@@ -330,19 +313,6 @@ export default function Example() {
                     ))}
                   </Tab.Panels>
                 </Tab.Group>
-
-                <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-                  {navigation.pages.map((page) => (
-                    <div key={page.name} className="flow-root">
-                      <a
-                        href={page.href}
-                        className="-m-2 block p-2 font-medium text-gray-900"
-                      >
-                        {page.name}
-                      </a>
-                    </div>
-                  ))}
-                </div>
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   <div className="flow-root">
@@ -534,16 +504,6 @@ export default function Example() {
                       )}
                     </Popover>
                   ))}
-
-                  {navigation.pages.map((page) => (
-                    <a
-                      key={page.name}
-                      href={page.href}
-                      className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                    >
-                      {page.name}
-                    </a>
-                  ))}
                 </div>
               </Popover.Group>
 
@@ -693,7 +653,7 @@ export default function Example() {
                   href="#"
                   className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
                 >
-                  Shop Collection
+                  Style Me
                 </a>
               </div>
             </div>
@@ -710,7 +670,7 @@ export default function Example() {
                 id="category-heading"
                 className="text-2xl font-bold tracking-tight text-gray-900"
               >
-                Shop by Category
+                Style by Category
               </h2>
               <a
                 href="#"
@@ -830,10 +790,13 @@ export default function Example() {
                 Long-term thinking
               </h2>
               <p className="mt-3 text-xl text-white">
-                We're committed to responsible, sustainable, and ethical
-                manufacturing. Our small-scale approach allows us to focus on
-                quality and reduce our impact. We're doing our best to delay the
-                inevitable heat-death of the universe.
+                Discover the Essence of African Fashion: Style Me takes you on a
+                captivating journey through the rich tapestry of African
+                fashion. From traditional attire to contemporary designs, the
+                app showcases the unique styles, colours, and patterns that
+                reflect the cultural heritage of various African countries.
+                Embrace the beauty of African fashion and unleash your
+                individuality.
               </p>
               <a
                 href="#"
@@ -987,106 +950,9 @@ export default function Example() {
           Footer
         </h2>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="py-20 xl:grid xl:grid-cols-3 xl:gap-8">
-            <div className="grid grid-cols-2 gap-8 xl:col-span-2">
-              <div className="space-y-16 md:grid md:grid-cols-2 md:gap-8 md:space-y-0">
-                <div>
-                  <h3 className="text-sm font-medium text-gray-900">Shop</h3>
-                  <ul role="list" className="mt-6 space-y-6">
-                    {footerNavigation.shop.map((item) => (
-                      <li key={item.name} className="text-sm">
-                        <a
-                          href={item.href}
-                          className="text-gray-500 hover:text-gray-600"
-                        >
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-sm font-medium text-gray-900">Company</h3>
-                  <ul role="list" className="mt-6 space-y-6">
-                    {footerNavigation.company.map((item) => (
-                      <li key={item.name} className="text-sm">
-                        <a
-                          href={item.href}
-                          className="text-gray-500 hover:text-gray-600"
-                        >
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              <div className="space-y-16 md:grid md:grid-cols-2 md:gap-8 md:space-y-0">
-                <div>
-                  <h3 className="text-sm font-medium text-gray-900">Account</h3>
-                  <ul role="list" className="mt-6 space-y-6">
-                    {footerNavigation.account.map((item) => (
-                      <li key={item.name} className="text-sm">
-                        <a
-                          href={item.href}
-                          className="text-gray-500 hover:text-gray-600"
-                        >
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-sm font-medium text-gray-900">Connect</h3>
-                  <ul role="list" className="mt-6 space-y-6">
-                    {footerNavigation.connect.map((item) => (
-                      <li key={item.name} className="text-sm">
-                        <a
-                          href={item.href}
-                          className="text-gray-500 hover:text-gray-600"
-                        >
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="mt-16 md:mt-16 xl:mt-0">
-              <h3 className="text-sm font-medium text-gray-900">
-                Sign up for our newsletter
-              </h3>
-              <p className="mt-6 text-sm text-gray-500">
-                The latest deals and savings, sent to your inbox weekly.
-              </p>
-              <form className="mt-2 flex sm:max-w-md">
-                <label htmlFor="email-address" className="sr-only">
-                  Email address
-                </label>
-                <input
-                  id="email-address"
-                  type="text"
-                  autoComplete="email"
-                  required
-                  className="w-full min-w-0 appearance-none rounded-md border border-gray-300 bg-white px-4 py-2 text-base text-indigo-500 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500"
-                />
-                <div className="ml-4 flex-shrink-0">
-                  <button
-                    type="submit"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                  >
-                    Sign up
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-
           <div className="border-t border-gray-200 py-10">
             <p className="text-sm text-gray-500">
-              Copyright &copy; 2021 Your Company, Inc.
+              Copyright &copy; 2021 Style Me, Inc.
             </p>
           </div>
         </div>
