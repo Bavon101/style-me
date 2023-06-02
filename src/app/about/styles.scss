@@ -1,0 +1,15 @@
+.about-wrapper {
+  align-items: flex-start;
+  justify-content: left;
+  font-family: 'DM Sans', sans-serif;
+  p {
+    font-size: medium;
+    line-height: 1.2em;
+    padding-top: 1.8em;
+  }
+  p.heading{
+    font-size: large;
+    padding-top: 1.8em;
+    justify-content: center;
+  }
+}
