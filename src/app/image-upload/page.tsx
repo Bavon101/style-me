@@ -57,15 +57,6 @@ export default function OnboardingWizard() {
             <div className="wizard-caption">Upload a passport size photo of yourself</div>
           </div>
 
-          <div
-            className="wizard-progress"
-            style={{ gridTemplateColumns: `repeat(${5}, 1fr)` }}
-          >
-            {Array(5).fill('').map((_, index) => (
-              <div key={index} className={`w-step ${index === 4 ? 'active' : ''}`} />
-            ))}
-          </div>
-
           <form className="wizard-body">
             <DropZone fileList={fileList} setInDropZone={onSelectImage} />
           </form>
