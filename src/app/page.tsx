@@ -377,9 +377,9 @@ export default function Example() {
                       id="sale-heading"
                       className="text-4xl font-bold tracking-tight text-white md:text-5xl"
                     >
-                      50 credits for new User
+                      50 credits for new user
                       <br />
-                      15 credits each month
+                      15 credits each month there after
                     </h2>
                     <div className="mt-6 text-base">
                       <a href="#" className="font-semibold text-white">
