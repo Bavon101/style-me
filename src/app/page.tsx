@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-
+import Link from 'next/link';
 import { UserButton, useUser } from "@clerk/nextjs";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import {
@@ -133,6 +133,7 @@ const navigation = {
   pages: [
     { name: 'Company', href: '#' },
     { name: 'Stores', href: '#' },
+    { name: 'About', href: 'about' },
   ],
 }
 
@@ -411,7 +412,7 @@ export default function Example() {
                                               className="object-cover object-center"
                                             />
                                           </div>
-                                          <a
+                                          <Link
                                             href={item.href}
                                             className="mt-6 block font-medium text-gray-900"
                                           >
@@ -420,7 +421,7 @@ export default function Example() {
                                               aria-hidden="true"
                                             />
                                             {item.name}
-                                          </a>
+                                          </Link>
                                           <p
                                             aria-hidden="true"
                                             className="mt-1"
@@ -449,12 +450,12 @@ export default function Example() {
                                                 key={item.name}
                                                 className="flex"
                                               >
-                                                <a
+                                                <Link
                                                   href={item.href}
                                                   className="hover:text-gray-800"
                                                 >
                                                   {item.name}
-                                                </a>
+                                                </Link>
                                               </li>
                                             ))}
                                           </ul>
@@ -472,13 +473,13 @@ export default function Example() {
                   ))}
 
                   {navigation.pages.map((page) => (
-                    <a
+                    <Link
                       key={page.name}
                       href={page.href}
                       className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                     >
                       {page.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </Popover.Group>
