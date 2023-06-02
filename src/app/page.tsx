@@ -870,9 +870,9 @@ export default function Example() {
                       id="sale-heading"
                       className="text-4xl font-bold tracking-tight text-white md:text-5xl"
                     >
-                      Final Stock.
+                      50 credits for new User
                       <br />
-                      Up to 50% off.
+                      15 credits each month
                     </h2>
                     <div className="mt-6 text-base">
                       <a href="#" className="font-semibold text-white">
