@@ -1,5 +1,6 @@
 'use client';
 
+import classNames from 'classnames';
 import { ChangeEvent, useCallback, useMemo, useState } from 'react';
 import './styles.scss';
 
@@ -134,6 +135,8 @@ export default function OnboardingWizard() {
     setCurrentStepID(wizardData[nextStepIndex].id);
   }, [currentStepID]);
 
+  console.log(currentSelection);
+
   return (
     <div className='wizard'>
       {currentStep && (
@@ -181,16 +184,30 @@ export default function OnboardingWizard() {
             </fieldset>
           </form>
 
-          <div className='wizard-btn-wrapper'>
+          <div
+            className={classNames(
+              'wizard-btn-wrapper',
+              currentStepID === wizardData[0].id ? 'flexEnd' : ''
+            )}
+          >
             {currentStepID !== wizardData[0].id && (
               <button className='wizard-btn prev' onClick={moveToPreviousStep}>
                 <span className='w-btn-text'>Previous</span>
               </button>
             )}
 
-            <button className='wizard-btn next' onClick={moveToNextStep}>
+            <button
+              className={classNames(
+                'wizard-btn next',
+                !currentSelection ? 'disabled' : ''
+              )}
+              disabled={!currentSelection}
+              onClick={moveToNextStep}
+            >
               <span className='w-btn-text'>
-                {currentStepID === wizardData[wizardData.length - 1].id ? 'Finish' : 'Next'}
+                {currentStepID === wizardData[wizardData.length - 1].id
+                  ? 'Finish'
+                  : 'Next'}
               </span>
             </button>
           </div>
