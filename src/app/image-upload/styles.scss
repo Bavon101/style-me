@@ -1,0 +1,113 @@
+.wizard {
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  background-color: #F7F7FB;
+  align-items: center;
+  display: flex;
+
+  .wizard-container {
+    width: 500px;
+    min-height: 650px;
+    border-radius: 34px;
+    grid-template-rows: auto auto 1fr auto;
+    box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+    border: 2px solid #D9DBE9;
+    background-color: white;
+    display: grid;
+    padding: 2rem;
+
+    .wizard-progress {
+      width: 100%;
+      display: grid;
+      align-items: center;
+      margin: 25px 0px 30px;
+      gap: 15px;
+
+      .w-step {
+        height: 8px;
+        background-color: #EFF0F7;
+
+        &.active {
+          background-color: #4A3AFF;
+        }
+
+        &:first-child {
+          border-top-left-radius: 40px;
+          border-bottom-left-radius: 40px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 40px;
+          border-bottom-right-radius: 40px;
+        }
+      }
+    }
+
+    .wizard-title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 35px;
+      color: #170F49;
+    }
+
+    .wizard-caption {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.1px;
+      line-height: 30px;
+      color: #6F6C90;
+    }
+
+    .wizard-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0 2rem;
+    }
+
+    .wizard-btn-wrapper {
+      display: flex;
+      margin-top: 10px;
+      justify-content: space-between;
+      align-items: center;
+
+      .wizard-btn {
+        border-radius: 2rem;
+        border: 1px solid #4A3AFF;
+        background-color: #4A3AFF;
+        padding: 10px 40px 12px;
+
+        .w-btn-text {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 20px;
+          line-height: 1;
+          letter-spacing: 0.4px;
+          text-align: center;
+          color: #FFFFFF;
+        }
+
+        &:disabled {
+          cursor: not-allowed;
+          background-color: #EFF0F7;
+          border-color: #D9DBE9;
+
+          .w-btn-text {
+            color: #6F6C90;
+          }
+        }
+
+        &.prev {
+          background-color: #FFFFFF;
+
+          .w-btn-text {
+            color: #4A3AFF;
+          }
+        }
+      }
+    }
+
+  }
+
+}
