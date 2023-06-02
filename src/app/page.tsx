@@ -144,8 +144,13 @@ const navigation = {
 const favorites = [
   {
     id: 1,
+<<<<<<< HEAD
     name: "Black Basic Tee",
     price: "$32",
+=======
+    name: "Goth Style",
+
+>>>>>>> main
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg",
@@ -153,8 +158,13 @@ const favorites = [
   },
   {
     id: 2,
+<<<<<<< HEAD
     name: "Off-White Basic Tee",
     price: "$32",
+=======
+    name: "Modern Style",
+
+>>>>>>> main
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-02.jpg",
@@ -162,8 +172,12 @@ const favorites = [
   },
   {
     id: 3,
+<<<<<<< HEAD
     name: "Mountains Artwork Tee",
     price: "$36",
+=======
+    name: "African Classic",
+>>>>>>> main
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-03.jpg",
@@ -623,7 +637,7 @@ export default function Example() {
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">
               <h1 className="font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Summer styles are finally here
+                Style Me - Style by AI
               </h1>
               <p className="mt-4 text-xl text-gray-500">
                 This year, our new summer collection will shelter you from the
@@ -702,7 +716,7 @@ export default function Example() {
                   href="#"
                   className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
                 >
-                  Shop Collection
+                  Style Me
                 </a>
               </div>
             </div>
@@ -719,7 +733,11 @@ export default function Example() {
                 id="category-heading"
                 className="text-2xl font-bold tracking-tight text-gray-900"
               >
+<<<<<<< HEAD
                 Shop by Category
+=======
+                Style by Category
+>>>>>>> main
               </h2>
               <a
                 href="#"
@@ -839,10 +857,20 @@ export default function Example() {
                 Long-term thinking
               </h2>
               <p className="mt-3 text-xl text-white">
+<<<<<<< HEAD
                 We're committed to responsible, sustainable, and ethical
                 manufacturing. Our small-scale approach allows us to focus on
                 quality and reduce our impact. We're doing our best to delay the
                 inevitable heat-death of the universe.
+=======
+                Discover the Essence of African Fashion: Style Me takes you on a
+                captivating journey through the rich tapestry of African
+                fashion. From traditional attire to contemporary designs, the
+                app showcases the unique styles, colours, and patterns that
+                reflect the cultural heritage of various African countries.
+                Embrace the beauty of African fashion and unleash your
+                individuality.
+>>>>>>> main
               </p>
               <a
                 href="#"
@@ -889,7 +917,6 @@ export default function Example() {
                       {favorite.name}
                     </a>
                   </h3>
-                  <p className="mt-1 text-sm text-gray-500">{favorite.price}</p>
                 </div>
               ))}
             </div>
@@ -917,9 +944,13 @@ export default function Example() {
                       id="sale-heading"
                       className="text-4xl font-bold tracking-tight text-white md:text-5xl"
                     >
+<<<<<<< HEAD
                       Final Stock.
+=======
+                      50 credits for new User
+>>>>>>> main
                       <br />
-                      Up to 50% off.
+                      15 credits each month
                     </h2>
                     <div className="mt-6 text-base">
                       <a href="#" className="font-semibold text-white">
@@ -996,6 +1027,7 @@ export default function Example() {
           Footer
         </h2>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<<<<<<< HEAD
           <div className="py-20 xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="grid grid-cols-2 gap-8 xl:col-span-2">
               <div className="space-y-16 md:grid md:grid-cols-2 md:gap-8 md:space-y-0">
@@ -1096,6 +1128,11 @@ export default function Example() {
           <div className="border-t border-gray-200 py-10">
             <p className="text-sm text-gray-500">
               Copyright &copy; 2021 Your Company, Inc.
+=======
+          <div className="border-t border-gray-200 py-10">
+            <p className="text-sm text-gray-500">
+              Copyright &copy; 2021 Style Me, Inc.
+>>>>>>> main
             </p>
           </div>
         </div>
